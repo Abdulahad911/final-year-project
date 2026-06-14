@@ -9,6 +9,7 @@ import { advRoutes } from './src/routes/advertisement.route.js';
 import userCartRoutes from './src/routes/userCart.route.js';
 import OrderRoutes from './src/routes/userOrder.routes.js';
 import connectCloudinary from './src/config/connectCloudinary.js';
+import chatbotRouter from './src/routes/chatbot.route.js'
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -36,6 +37,7 @@ app.use('/api/product', ProductsRoutes)
 app.use('/api/adv', advRoutes)
 app.use('/api/cart', userCartRoutes)
 app.use('/api/payment', OrderRoutes)
+app.use('/api/chatbot', chatbotRouter)
 
 app.listen(PORT, () => {
     console.info(`Server is Live at port: http://localhost:${PORT}`)
