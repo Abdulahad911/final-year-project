@@ -12,6 +12,7 @@ import PlaceOrder from './pages/PlaceOrder'
 import CartDrawer from './components/CartDrawer'
 // import KeyboardCartNavigation from './components/KeyboardCartNavigation'
 import Order from './pages/Order'
+import Chatbot from './components/Chatbot'
 import { ToastContainer } from 'react-toastify'
 
 
@@ -25,6 +26,7 @@ const App = () => {
     <div className='px-1 sm:px-[3vw] md:px-[4vw] lg:px-[5vw]'>
       <ToastContainer />
       <TopNavbar />
+      
 
       {location.pathname !== '/login' && location.pathname !== '/cart' && <BottomNavbar />}
       {/* <KeyboardCartNavigation /> */}
@@ -42,6 +44,7 @@ const App = () => {
         <Route path='/orders' element={<Order />} />
       </Routes>
       <Footer />
+      <Chatbot />
     </div>
   )
 }
