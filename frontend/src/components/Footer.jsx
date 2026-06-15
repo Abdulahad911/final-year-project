@@ -115,7 +115,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className='mt-10 mb-5 border-t p-4 flex flex-col md:flex-row items-center justify-between gap-4'>
                 <p className='text-gray-800 text-center md:text-left'>
-                    All rights reserved 2025
+                    All rights reserved 2026
                 </p>
 
                 <div className='flex items-center gap-2 flex-wrap justify-center md:justify-end'>

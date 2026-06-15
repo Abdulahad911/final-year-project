@@ -57,8 +57,8 @@ const Advertisement = () => {
                 className="w-full h-full"
             >
                 {images
-                    .flatMap(item => item.images)  
-                    .slice(4)                       
+                    .flatMap(item => item.images)
+                    .slice(0)
                     .map((src, index) => (
                         <SwiperSlide key={index}>
                             <img
